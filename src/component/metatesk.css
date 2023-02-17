@@ -1366,8 +1366,8 @@ p:nth-of-type(2) {
 
 .footer-section{
   margin-top: 40px;
-  padding: 20px 0px;
-  background: #482aff;
+  padding: 20px 0px 0px 0px;
+  background: #e6e4fa;
 }
 
 .footer-section
@@ -1377,7 +1377,7 @@ p:nth-of-type(2) {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  
 }
 
 .footer-section
@@ -1410,9 +1410,17 @@ p:nth-of-type(2) {
 }
 
 .ul-box p{
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: 600;
+  font-family: 'Nunito';
+  padding-top: 15px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.ul-box p:nth-of-type(1){
+  padding: 0px;
 }
 
 .ul-box ul{
@@ -1421,13 +1429,43 @@ p:nth-of-type(2) {
 
 .ul-box ul li {
   list-style: none;
-  color: white;
+  
+  margin: 10px 10px 10px 0px;
 }
+
 
 .ul-box ul li a{
   color: white;
   text-decoration: none;
+  font-size: large;
+  color: black;
+  font-family: "Calibri light";
 }
+
+
+.footer-section
+.last-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #482AFF;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.footer-section
+.last-row p{
+  color: white;
+}
+
+
+.footer-section
+.last-row img{
+  width:5%;
+}
+
+
 
 /* section-five */
 
@@ -1988,6 +2026,7 @@ img{
   font-family: "Nunito";
   padding-left: 30px;
 }
+
 
 
 /* .section-seven  {
