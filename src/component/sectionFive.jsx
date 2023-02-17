@@ -3,20 +3,6 @@ const SectionFive = () => {
 
 
 
-  const imgs = [
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609842/Img3_gs0vzw.png',
-      text:'PC'
-    },
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666614856/Img2_gete2g.png',
-      text:'VR'
-    },
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609852/Img1_yuxlde.png',
-      text:'MOBILE'
-    },
-  ]
   return (
     <article className='section-five'>
       <div  className="container">
@@ -33,16 +19,16 @@ const SectionFive = () => {
                 <p> Arts </p>
               </div>
               <div className="link-div">
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
               </div>
             </div>
             <div className="col-md-6">
@@ -51,16 +37,16 @@ const SectionFive = () => {
                 <p> Arts </p>
               </div>
               <div className="link-div">
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
               </div>
             </div>
             <div className="col-md-6">
@@ -69,16 +55,16 @@ const SectionFive = () => {
                 <p> Arts </p>
               </div>
               <div className="link-div">
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
               </div>
             </div>
             <div className="col-md-6">
@@ -87,16 +73,16 @@ const SectionFive = () => {
                 <p> Arts </p>
               </div>
               <div className="link-div">
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
-                <a href="">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
+                <a href="https://www.enteskedu.com/">Drawing</a>
               </div>
             </div>
                 {/* {

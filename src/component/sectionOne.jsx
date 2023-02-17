@@ -1,4 +1,4 @@
-import React,{useState,useRef,useEffect} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Element} from 'react-scroll';
 import ScrollTriger from 'react-scroll-trigger';
 import { animated, useSpring } from '@react-spring/web'
@@ -8,10 +8,6 @@ const SectionOne = ({setboolean}) => {
   
 
 // use spring 
-
-
-const [angle, setAngle] = useState(0);
-
 const [angle1, setAngle1] = useState(0);
 const [angle2, setAngle2] = useState(0);
 const [angle3, setAngle3] = useState(0);

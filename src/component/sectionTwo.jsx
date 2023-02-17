@@ -7,13 +7,9 @@ import Slider from "react-slick";
 
 const SectionTwo = () => {
   const [number, setNumber] = useState(false);
-  // const sliderRef = useRef(null);
   const array = [1, 2, 3, 4, 5, 7, 8, 9,]
-  // const src =
-  //   "https://res.cloudinary.com/dbgyytugh/video/upload/v1665658464/recipes/MetateskTrailer_14.49.50_hmrro3.mp4";
-  
-    const [rightSliderClass, setrightSliderClass] = useState('');
-    const [lefttSliderClass, setlefttSliderClass] = useState('left-side');
+  const [rightSliderClass, setrightSliderClass] = useState('');
+  const [lefttSliderClass, setlefttSliderClass] = useState('left-side');
 
      
   const settings = {
@@ -40,8 +36,6 @@ const SectionTwo = () => {
 
     },
   };
-  // console.log(slideIndex < [0, 1, 2, 3, 4, 5, 6].length - 1)
-  // console.log(slideIndex )
   return (
     <ScrollTriger
       onEnter={() => setNumber(true)}

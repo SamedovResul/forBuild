@@ -1,38 +1,31 @@
-import React,{useState} from 'react'
-import sectionImg from './metaImg/sectionOnebg.jpeg'
-import CountUp from 'react-countup'
-import ScrollTriger from 'react-scroll-trigger'
-import google from './metaImg/google.png';
-const Addsection5 = () => {
+import React from 'react'
+// import sectionImg from './metaImg/sectionOnebg.jpeg'
+// import CountUp from 'react-countup'
+// import ScrollTriger from 'react-scroll-trigger'
+// import google from './metaImg/google.png';
+const SectionNine = () => {
   
 
 
   return (
-    <article className='add-section-five'>
+    <article className='section-nine'>
     {/* <div className='png' ></div> */}
     <div  className="container">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-4">
-            <div className="text-box">
-            <p>overall</p>
-            <p>11385</p>
-            <p> class hours </p>
+          <div className="col-md-6">
+            <div className="box">
+              <img src="https://static.outschool.com/master/main/public/images/Illustration_Heart_200x200-Color.8d6a331690995e301839bda497e9771e.png" alt="metatesk" />
+              <p>Inspire a love of learning and teach what you’re passionate about, whenever and wherever you want to teach it.</p>
+              <a href="*">Apply to teach</a>
             </div>
           </div>
-          <div className="col-md-4">
-          <div className="text-box">
-            <p> students from  </p>
-            <p>5</p>
-            <p>countries</p>
-          </div>
-          </div>
-          <div className="col-md-4">
-          <div className="text-box">
-            <p>under   </p>
-            <img src='https://res.cloudinary.com/dbgyytugh/image/upload/v1666609840/google_f3kgkz.png' alt="" />
-            <p>program</p>
-          </div>
+          <div className="col-md-6">
+          <div className="box">
+              <img src="https://static.outschool.com/master/main/public/images/Illustration_Heart_200x200-Color.8d6a331690995e301839bda497e9771e.png" alt="metatesk" />
+              <p>Inspire a love of learning and teach what you’re passionate about, whenever and wherever you want to teach it.</p>
+              <a href="*">Apply to teach</a>
+            </div>
           </div>
         </div>
       </div>
@@ -41,4 +34,4 @@ const Addsection5 = () => {
   )
 }
 
-export default Addsection5
+export default SectionNine

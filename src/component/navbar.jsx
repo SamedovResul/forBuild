@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import metateskLogo from "./metaImg/metatesk-text-logo.png";
 import { useSpring, animated } from "react-spring";
 import { Link, Element } from "react-scroll";
-import ScrollTriger from 'react-scroll-trigger'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import 
 
 const Navbar = ({ Boolean }) => {
   const { boolean, setboolean } = Boolean;

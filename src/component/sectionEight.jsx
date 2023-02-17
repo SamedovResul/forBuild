@@ -1,22 +1,85 @@
-import React from "react";
+import React,{useState} from "react";
+import img1 from './metaImg/Img1.png'
+import img2 from './metaImg/Img2.png'
+import img3 from './metaImg/Img3.png'
 
 const SectionSeven = () => {
 
+  const [className, setclassName] = useState(10)
 
-  const imgs = [
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/MetaQuest_roplyk.png'
-    },
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609839/Roblox_swh04f.png'
-    },
-    {
-      img:'https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/core_fgxgep.png'
-    },
-  ]
+
+
   return (
-    <section className="section-seven">
+    <section className="section-eight">
       <div className="container">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="text-container">
+                <h4>
+                  Outschool in action
+                </h4>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="text-box">
+                <div 
+                  className={ className === 10 ? "active":"inactive"}
+                  onClick={() => className !== 10 && setclassName(10) } >
+                  <div>
+                    <p>Preview a class</p>
+                  </div>
+                  <div>
+                    <p>Outschool teacher, Tammy, sparks creativity in the classroom during a live video class.</p>
+                  </div>
+                </div>
+                <div 
+                  className={ className === 9 ? "active":"inactive"}
+                  onClick={() => className !== 9 && setclassName(9) } 
+                  >
+                  <div>
+                    <p>Preview a class</p>
+                  </div>
+                  <div>
+                    <p>Outschool teacher, Tammy, sparks creativity in the classroom during a live video class.</p>
+                  </div>
+                </div>
+                <div 
+                  className={ className === 8 ? "active":"inactive"}
+                  onClick={() => className !== 8 && setclassName(8) } 
+                  >
+                  <div>
+                    <p>Preview a class</p>
+                  </div>
+                  <div>
+                    <p>Outschool teacher, Tammy, sparks creativity in the classroom during a live video class.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="video-box">
+                {
+                  className === 10 && (
+                    <img src={img1} alt="" />
+                  )
+                }
+                {
+                  className === 9 && (
+                    <img src={img2} alt="" />
+                  )
+                }
+                  {
+                  className === 8 && (
+                    <img src={img3} alt="" />
+                  )
+                  }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="container">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -38,7 +101,7 @@ const SectionSeven = () => {
               }
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

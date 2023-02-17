@@ -1,23 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
-import img1 from "./metaImg/image1.png";
-import img2 from "./metaImg/image2.png";
-import img3 from "./metaImg/image3.png";
-import { useSpring, animated } from "react-spring";
+import React from "react";
+// import img1 from "./metaImg/image1.png";
+// import img2 from "./metaImg/image2.png";
+// import img3 from "./metaImg/image3.png";
+// import { useSpring, animated } from "react-spring";
 
 const SectionTwo = () => {
-  const [Scroll, getScroll] = useState("");
-
-  const imgs = [
-    {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/image2_yubhzi.png",
-    },
-    {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609837/image1_fg49bt.png",
-    },
-    {
-      img: "https://res.cloudinary.com/dbgyytugh/image/upload/v1666609838/image3_eutmiq.png",
-    },
-  ];
+  
 
   return (
     <article className="section-three">
