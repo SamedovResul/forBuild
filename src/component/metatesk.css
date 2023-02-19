@@ -36,6 +36,9 @@
   font-family: "Calibri Light";
   font-size: large;
   margin:auto -11% auto 2%;
+  background-color: white;
+  line-height: normal;
+  text-transform: capitalize;
 }
 
 
@@ -339,6 +342,51 @@
     font-size: 0.80rem;
   }
 }
+
+/* modal  */
+
+  .Modal-Box{
+    text-align: center;
+    border: none !important;
+    border-radius: 20px;
+  }
+
+  .Modal-Box p:nth-of-type(1){
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Nunito";
+  }
+
+
+  .Modal-Box p:nth-of-type(2){
+    font-family: "Calibri light";
+  }
+
+  .Modal-Box p:nth-of-type(3){
+    margin: 10px auto;
+    font-family: "Calibri light";
+  }
+
+  .Modal-Box p:nth-of-type(3) a{
+    text-decoration: none;
+    margin: 2px;
+  }
+
+  .Modal-Box button{
+    padding: 7px 50px;
+    border-radius: 30px;
+    border: 1px solid #9181fa;
+    color: #482AFF;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Nunito";
+  }
+
+  .Modal-Box button:hover{
+    border: 1px solid #482AFF;
+    background-color: #e6e4fa ;
+  }
+
 
 /* metatesk-header */
 
