@@ -351,25 +351,15 @@
     border-radius: 20px;
   }
 
+  .Modal-Box > div{
+    margin: 10px;
+    width: 80%;
+  }
+
   .Modal-Box p:nth-of-type(1){
     font-size: 25px;
     font-weight: 800;
     font-family: "Nunito";
-  }
-
-
-  .Modal-Box p:nth-of-type(2){
-    font-family: "Calibri light";
-  }
-
-  .Modal-Box p:nth-of-type(3){
-    margin: 10px auto;
-    font-family: "Calibri light";
-  }
-
-  .Modal-Box p:nth-of-type(3) a{
-    text-decoration: none;
-    margin: 2px;
   }
 
   .Modal-Box button{
