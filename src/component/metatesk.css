@@ -397,15 +397,15 @@
     padding: 7px 50px;
     border-radius: 30px;
     border: 1px solid #9181fa;
-    color: #482AFF;
+    color: white;
     font-size: 20px;
     font-weight: 700;
     font-family: "Nunito";
+    background-color: #482AFF;
   }
 
   .Modal-Box button:hover{
     border: 1px solid #482AFF;
-    background-color: #e6e4fa ;
   }
 
 
