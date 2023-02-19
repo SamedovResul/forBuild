@@ -362,6 +362,28 @@
     font-family: "Nunito";
   }
 
+
+  .Modal-Box label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px auto;
+    font-weight: 700;
+    font-family: "Nunito";
+    text-transform: capitalize;
+  }
+
+  .Modal-Box label input{
+    width: 100%;
+    border: 1px solid gray;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-family: "Calibri light";
+  }
+
+
+
   .Modal-Box button{
     padding: 7px 50px;
     border-radius: 30px;

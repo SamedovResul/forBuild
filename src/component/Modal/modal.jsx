@@ -31,9 +31,20 @@ const style = {
       >
         <Box sx={style} className='Modal-Box' >
           <Typography>Create Account</Typography>
-          <TextField required id="outlined-basic" label="Adult Full Name" variant="outlined" />
-          <TextField required id="outlined-basic" label="Adult Email" variant="outlined" />
-          <TextField required id="outlined-basic" label="Password" variant="outlined" />
+          <label htmlFor="name">
+            full name
+            <input required  id='name' type="text"  />
+          </label>
+          
+          <label htmlFor="email">
+            Adult Email
+            <input required  id='email' type="text"  />
+          </label>
+
+          <label htmlFor="Password">
+            Password
+            <input required  id='Password' type="text"  />
+          </label>
           <button> Join Metatesk </button>
         </Box>
       </Modal>
