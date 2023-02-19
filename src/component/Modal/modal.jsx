@@ -46,6 +46,7 @@ const style = {
             <input required  id='Password' type="text"  />
           </label>
           <button> Join Metatesk </button>
+          <p> Already have an account? <a href="#"> Log in </a> </p>
         </Box>
       </Modal>
     </div>

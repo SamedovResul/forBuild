@@ -362,6 +362,15 @@
     font-family: "Nunito";
   }
 
+  .Modal-Box p:nth-of-type(2){
+    font-family: "Calibri Light";
+    margin: 5px;
+  }
+
+
+  .Modal-Box p:nth-of-type(2) a{
+    text-decoration: none;
+  }
 
   .Modal-Box label{
     display: flex;
