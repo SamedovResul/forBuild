@@ -1,5 +1,4 @@
 import React from 'react';
-import './metatesk.css'
 import SectionOne from './sectionOne';
 import SectionTwo from './sectionTwo';
 import SectionThree from './sectionThree';

@@ -4,9 +4,13 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Metatesk from './component/Metatesk'
+import Metatesk from './component/Home/Metatesk';
+import LearnerForm from './component/learnerForm/learnerForm'
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
+import './component/metatesk.css';
+
+
 
 function App() {
   const [boolean, setboolean] = useState(false)
@@ -14,15 +18,18 @@ function App() {
     
       <Router>
         <div className="App" onClick={() => boolean? setboolean(false) : null } >
-        <Route path="/"  >
+        <Route   >
           <Navbar Boolean={{boolean, setboolean}} />
         </Route >
         <Switch>
+          <Route path="/learner"  >
+            <LearnerForm />
+          </Route >
           <Route path="/"  >
             <Metatesk Boolean={{boolean, setboolean}} />
           </Route >
         </Switch>
-        <Route path="/"  >
+        <Route   >
           <Footer  />
         </Route >
       </div>

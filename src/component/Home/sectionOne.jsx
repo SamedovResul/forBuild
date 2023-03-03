@@ -51,7 +51,7 @@ useEffect(() => {
 
   const animation3 = useSpring({
     transform: `translate(${x3}px, ${y3}px)`
-});
+  });
 
   return (
     <Element name="home" >

@@ -33,11 +33,11 @@ const sectionFour = () => {
               </div>
             </div>
             {
-                data.map((data) =>{
+                data.map((data,i) =>{
                   const {img, headText,txt} = data
 
                   return(
-                    <div className="col-md-4">
+                    <div key={i} className="col-md-4">
                       <div className="box">
                           <img src={img} alt="metatesk" />
                           <p>{headText}</p>

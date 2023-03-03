@@ -1,8 +1,4 @@
 import React from "react";
-// import img1 from "./metaImg/image1.png";
-// import img2 from "./metaImg/image2.png";
-// import img3 from "./metaImg/image3.png";
-// import { useSpring, animated } from "react-spring";
 
 const SectionTwo = () => {
   
@@ -26,20 +22,6 @@ const SectionTwo = () => {
                 </div>
               </div>
             </div>
-            {/* {imgs.map((data, i) => {
-              const { img } = data;
-              return (
-                <div key={i} className="col-md-4 ">
-                  <div className="metatesk-box ">
-                    <div className="img-div">
-                      <img src={img} alt="" />
-                    </div>
-                    <p>Anytime, Anywhere</p>
-                    <p>join the classes</p>
-                  </div>
-                </div>
-              );
-            })} */}
           </div>
         </div>
       </div>

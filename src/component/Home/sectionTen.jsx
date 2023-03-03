@@ -73,7 +73,7 @@ const SectionNine = () =>{
                          <div className="top-div">
                            <img
                              src="https://process.filepicker.io/APHE465sSbqvbOIStdwTyz/rotate=deg:exif/resize=fit:crop,height:140,width:240/output=quality:80,compress:true,strip:true,format:jpg/cache=expiry:max/https://cdn.filestackcontent.com/uxkppTQSTROb91QPTjRT"
-                             alt=""
+                             alt="metatesk"
                            />
                          </div>
                          <div className="bottom-div">

@@ -1,25 +1,50 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import metateskLogo from "./metaImg/metatesk-text-logo.png";
 import Button from '@mui/material/Button';
 import { useSpring, animated } from "react-spring";
 import { Link, Element } from "react-scroll";
 import Modal from "./Modal/modal";
+import LoginModal from "./Modal/loginModal";
+import {
+  ClearState,
+} from "../redux/action/action";
+import { useSelector,useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 
-// <Button onClick={handleOpen}>Open modal</Button>
 
 const Navbar = ({ Boolean }) => {
   const { boolean, setboolean } = Boolean;
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+
+  const [open, setOpen] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
+
+  const handleOpenClose = () => open? setOpen(false) : setOpen(true);
+  const handleOpenCloseLogin = () => openLogin? setOpenLogin(false) : setOpenLogin(true);
+
   const burger = useSpring({
     to: [{ right: boolean ? "0%" : "-50%" }],
     from: { right: "-50%" },
   });
 
+  const state = useSelector((confirm) => confirm);
+  const dispatch = useDispatch()
+
+  let history = useHistory();
+  const logOut = () =>{
+    dispatch(ClearState())
+    history.push("/");
+  }
+
+  useEffect(() => {
+    
+
+  }, [state])
+  
+  console.log(state.auth)
   return (
     <section className="nav-section">
-      <Modal  open={open}  handleClose={handleClose} />
+      <Modal  open={open}  handleClose={handleOpenClose} />
+      <LoginModal open={openLogin}  handleClose={handleOpenCloseLogin} />
         <Element name="join">
           {/* first nav section  */}
           <div className="navigation-div-first general-section">
@@ -80,14 +105,23 @@ const Navbar = ({ Boolean }) => {
                   </span>
                 </li>
                 <li>
-                  <Link to="join" smooth={true} duration={500} offset={-150}>
-                    Login
-                  </Link>
+                  {
+                    state.auth.authData ? (
+                      <Link to="/" onClick={logOut}>
+                        LogOut
+                      </Link>
+                    ):(
+                      <Link to="" onClick={handleOpenCloseLogin}>
+                        Login
+                      </Link>
+                    )
+                  }
+                  
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 96h64c17.7 0 32 14.3 32 32V384c0 17.7-14.3 32-32 32H352c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c53 0 96-43 96-96V128c0-53-43-96-96-96H352c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-7.5 177.4c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22v72H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H160v72c0 9.6 5.7 18.2 14.5 22s19 2 26-4.6l144-136z"/></svg>
                   </span>
                 </li>
-                <Button onClick={handleOpen}>Join</Button>
+                <Button onClick={handleOpenClose}>Join</Button>
               </ul>
 
             </div>
