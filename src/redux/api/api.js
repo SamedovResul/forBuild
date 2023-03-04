@@ -32,7 +32,7 @@ const Api = {
 
 
   confirmation: function(data) {
-    return axios.post('https://metateskback.azurewebsites.net/confirmation',data)
+    return axios.post('https://for-build-zeta.vercel.app/auth/confirmation',data)
   },
 
   // stripe api
