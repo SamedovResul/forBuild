@@ -145,7 +145,7 @@ const ModalContainer = ({ open, handleClose }) => {
       });
   }, [state]);
 
-
+  console.log(state)
   return (
     <div>
       <Modal
