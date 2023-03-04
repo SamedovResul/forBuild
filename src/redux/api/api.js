@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-
-const API = axios.create({ baseURL: 'https://metateskback.azurewebsites.net/' });
+const api = 'https://metateskback.azurewebsites.net/'
+const API = axios.create({ baseURL: api });
 // const API = axios.create({ baseURL: 'http://localhost:8080' });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
@@ -32,7 +32,7 @@ const Api = {
 
 
   confirmation: function(data) {
-    return axios.post('https://for-build-zeta.vercel.app/auth/confirmation',data)
+    return axios.post(`${api}auth/confirmation`,data)
   },
 
   // stripe api
