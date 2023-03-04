@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 
-// const API = axios.create({ baseURL: 'https://metateskback.azurewebsites.net/' });
-const API = axios.create({ baseURL: 'http://localhost:8080' });
+const API = axios.create({ baseURL: 'https://metateskback.azurewebsites.net/' });
+// const API = axios.create({ baseURL: 'http://localhost:8080' });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
     req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`;
@@ -32,7 +32,7 @@ const Api = {
 
 
   confirmation: function(data) {
-    return axios.post('http://localhost:8080/auth/confirmation',data)
+    return axios.post('https://metateskback.azurewebsites.net/confirmation',data)
   },
 
   // stripe api
