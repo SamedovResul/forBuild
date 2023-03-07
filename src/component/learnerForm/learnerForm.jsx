@@ -5,8 +5,11 @@ import React,{
 import './learner.css'
 import AvataraModal from './avatarModal'
 import TopicModal from './topicModel'
+import { useHistory } from "react-router-dom";
+
 
 const LearnerForm = () => {
+  let history = useHistory();
   const [Error, setError] = useState({
     name:false,
     age:false
@@ -173,6 +176,7 @@ const LearnerForm = () => {
         topic:[]
       })
       setTopicsSelected(prevTopics => prevTopics.map(topic => ({ ...topic, selected: false })));
+      history.push('/studenthome')
     } else if(!kisdData.name || !kisdData.age){
         !kisdData.name && handleError({
           name:true

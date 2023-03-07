@@ -8,8 +8,8 @@ import ScrollTriger from 'react-scroll-trigger';
 // import Swal from 'sweetalert2'
 // import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import Slider from "react-slick";
-
+// import Slider from "react-slick";
+import Slider from '../slider/slider';
 
 
 const SectionNine = () =>{
@@ -51,7 +51,8 @@ const SectionNine = () =>{
       onEnter={() => setNumber(true)}
       onExit={() => setNumber(false)}
     >
-      <article className="secton-nine">
+      <article className="secton-ten">
+
         <div className="container">
           <div className="container-fluid">
             <div className="row">
@@ -60,36 +61,7 @@ const SectionNine = () =>{
                   <p>Articles you may find helpful</p>
                 </div>
               </div>
-
-
-              <div className="col-md-12 slider-div">
-                <div className={rightSliderClass}>
-
-                </div>
-                <Slider {...settings}  >
-                {array.map(index => (
-                       <div key={index} className="slide-div">
-                       <div >
-                         <div className="top-div">
-                           <img
-                             src="https://process.filepicker.io/APHE465sSbqvbOIStdwTyz/rotate=deg:exif/resize=fit:crop,height:140,width:240/output=quality:80,compress:true,strip:true,format:jpg/cache=expiry:max/https://cdn.filestackcontent.com/uxkppTQSTROb91QPTjRT"
-                             alt="metatesk"
-                           />
-                         </div>
-                         <div className="bottom-div">
-                           <p> Lorem ipsum dolor sit. </p>
-                           <button>Davamı</button>
-                         </div>
-                       </div>
-                     </div>
-                  ))}
-                 
-                </Slider>
-                <div className={lefttSliderClass}>
-
-                </div>
-              </div>
-
+              <Slider />
             </div>
           </div>
         </div>

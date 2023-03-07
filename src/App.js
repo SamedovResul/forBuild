@@ -8,6 +8,7 @@ import Metatesk from './component/Home/Metatesk';
 import LearnerForm from './component/learnerForm/learnerForm'
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
+import Main from "./component/studentHome/studentMain";
 import './component/metatesk.css';
 
 
@@ -24,6 +25,9 @@ function App() {
         <Switch>
           <Route path="/learner"  >
             <LearnerForm />
+          </Route >
+          <Route path="/studenthome"  >
+            <Main />
           </Route >
           <Route path="/"  >
             <Metatesk Boolean={{boolean, setboolean}} />

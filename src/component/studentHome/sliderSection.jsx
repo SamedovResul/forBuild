@@ -1,19 +1,19 @@
 import React from 'react';
-import Classes from '../classes/classes';
+import SliderComponent from '../slider/slider';
 
 
-const SectionFive = () => {
+const SliderSection = ({text}) => {
   return (
-    <article className='section-five'>
-      <div  className="container">
+    <article className="slider-section">
+      <div className="container">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
               <div className="text-box">
-                <h5> Classes by subject </h5>
+                <p>{text}</p>
               </div>
             </div>
-            <Classes />
+            <SliderComponent/>
           </div>
         </div>
       </div>
@@ -21,4 +21,4 @@ const SectionFive = () => {
   )
 }
 
-export default SectionFive
+export default SliderSection

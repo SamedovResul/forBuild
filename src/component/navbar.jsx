@@ -40,7 +40,6 @@ const Navbar = ({ Boolean }) => {
 
   }, [state])
   
-  console.log(state.auth)
   return (
     <section className="nav-section">
       <Modal  open={open}  handleClose={handleOpenClose} />

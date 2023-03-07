@@ -31,7 +31,6 @@ useEffect(() => {
     clearInterval(intervalId3);
   };
   }, []);
-
   const x1 = 20 * Math.cos(angle1);
   const y1 = 10 * Math.sin(angle1);
 
